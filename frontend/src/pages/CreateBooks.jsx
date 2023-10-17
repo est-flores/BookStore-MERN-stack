@@ -10,6 +10,7 @@ const CreateBooks = () => {
   const [publishYear, setPublishYear] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
   const handleSaveBook = () => {
     const data = {
       title,
@@ -28,8 +29,6 @@ const CreateBooks = () => {
         console.log(error);
       });
   };
-
-
 
   return (
     <div className='p-4'>
